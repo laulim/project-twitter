@@ -7,14 +7,14 @@ var gulp = require('gulp'),
 
 gulp.task('server', ['sass'], function() {
 	browserSync.init({
-		server: { baseDir: './app/'}
+		server: { baseDir: './docs/'}
 	});
-	gulp.watch('app/**/*.html').on('change', browserSync.reload);
-	gulp.watch('app/sass/**/*.scss', ['sass']);
+	gulp.watch('docs/**/*.html').on('change', browserSync.reload);
+	gulp.watch('docs/sass/**/*.scss', ['sass']);
 });
 
 gulp.task('sass', function(){
-	return gulp.src('./app/sass/**/main.scss')
+	return gulp.src('./docs/sass/**/main.scss')
 		.pipe(plumber({
 			errorHandler: notify.onError(function(err){
 				return {
@@ -25,7 +25,7 @@ gulp.task('sass', function(){
 			})
 		}))
 		.pipe(sass())
-		.pipe(gulp.dest('./app/css'))
+		.pipe(gulp.dest('./docs/css'))
 		.pipe(browserSync.stream());
 });
 
