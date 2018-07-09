@@ -34,7 +34,7 @@
 						<ul class="stats">
 							<li class="stats-item">
 								<b class="stats-title">Твиты</b>
-								<b class="stats-count">57</b>
+								<b class="stats-count" id="tweetCounter">57</b>
 							</li>
 						</ul>
 
@@ -47,9 +47,9 @@
 				<!-- make a tweet -->
 				<div class="card mb-3">
 					<div class="card-body">
-						<form>
+						<form id="postNewTweet">
 							<div class="form-group">
-								<input type="text" class="form-control" id="exampleInputEmail" placeholder="Что нового?">
+								<input id="tweetText" type="text" class="form-control" id="exampleInputEmail" placeholder="Что нового?">
 							</div>
 							<button type="submit" class="btn btn-primary">Твитнуть</button>
 						</form>
@@ -57,42 +57,50 @@
 				</div>
 				<!-- // make a tweet -->
 
-				<div class="card tweet-card">
+				<div class="card card-title-only">
 					<div class="h4 mb-0">Твиты пользователя</div>
 				</div>
+				
+				<!-- tweetList -->
+				<div id="tweetList">
+					<!-- single-tweet -->
+					<!-- <div class="card tweet-card">
+						<div class="tweet-date">28 апр. 2017 г.</div>
+						<div class="tweet-text font-size-large">
+							<p>Сделала копию странички в twitter с <a href="http://webcademy.ru" target="_blank">http://webcademy.ru/</a></p> 
+						</div>
+					</div> -->
+					<!-- // single-tweet -->
 
-				<!-- single-tweet -->
-				<div class="card tweet-card">
-					<div class="tweet-date">28 апр. 2017 г.</div>
-					<div class="tweet-text font-size-large">
-						<p>Сделала копию странички в twitter с <a href="http://webcademy.ru" target="_blank">http://webcademy.ru/</a></p> 
-					</div>
+					<!-- single-tweet -->
+					<!-- <div class="card tweet-card">
+						<div class="tweet-date">22 апр. 2017 г.</div>
+						<div class="tweet-text font-size-small">
+							<p>Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. </p> 
+						</div>
+					</div> -->
+					<!-- // single-tweet -->
+
+					<!-- single-tweet -->
+					<!-- <div class="card tweet-card">
+						<div class="tweet-date">18 апр. 2017 г.</div>
+						<div class="tweet-text font-size-normal">
+							<p>Не такой большой твит. Средненькй. Не такой большой твит. Средненькй. Не такой большой твит. Средненькй. Не такой большой твит. Средненькй. </p> 
+						</div>
+					</div> -->
+					<!-- // single-tweet -->
+
+					<!-- single-tweet -->
+					<!-- <div class="card tweet-card">
+						<div class="tweet-date">12 апр. 2017 г.</div>
+						<div class="tweet-text font-size-large">
+							<p>Потратила 3,5 часа, чтобы выбрать шрифт для саблайма.</p> 
+						</div>
+					</div> -->
+					<!-- // single-tweet -->
 				</div>
-				<!-- // single-tweet -->
-				<!-- single-tweet -->
-				<div class="card tweet-card">
-					<div class="tweet-date">22 апр. 2017 г.</div>
-					<div class="tweet-text font-size-small">
-						<p>Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. Самый большой твит о чем-нибудь. </p> 
-					</div>
-				</div>
-				<!-- // single-tweet -->
-				<!-- single-tweet -->
-				<div class="card tweet-card">
-					<div class="tweet-date">18 апр. 2017 г.</div>
-					<div class="tweet-text font-size-normal">
-						<p>Не такой большой твит. Средненькй. Не такой большой твит. Средненькй. Не такой большой твит. Средненькй. Не такой большой твит. Средненькй. </p> 
-					</div>
-				</div>
-				<!-- // single-tweet -->
-				<!-- single-tweet -->
-				<div class="card tweet-card">
-					<div class="tweet-date">12 апр. 2017 г.</div>
-					<div class="tweet-text font-size-large">
-						<p>Потратила 3,5 часа, чтобы выбрать шрифт для саблайма.</p> 
-					</div>
-				</div>
-				<!-- // single-tweet -->
+				<!-- // tweetList -->
+
 
 				<!-- footer -->
 				<footer class="footer">
@@ -118,6 +126,7 @@
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>

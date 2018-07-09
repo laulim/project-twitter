@@ -10,6 +10,7 @@ gulp.task('server', ['sass'], function() {
 		server: { baseDir: './docs/'}
 	});
 	gulp.watch('docs/**/*.html').on('change', browserSync.reload);
+	gulp.watch('docs/**/*.js').on('change', browserSync.reload);
 	gulp.watch('docs/sass/**/*.scss', ['sass']);
 });
 
